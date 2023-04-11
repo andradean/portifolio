@@ -278,7 +278,7 @@ section {
     .title-pinned {
         display: none;
     }
-    ::-webkit-scrollbar { overflow-y:hidden; }
+    ::-webkit-scrollbar { overflow-x:hidden; }
 
 
 }
