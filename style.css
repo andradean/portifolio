@@ -246,6 +246,8 @@ section {
         "header"
         "main";
       margin: 40px auto;
+      overflow-x:hidden;
+
     }
   
     aside {
@@ -255,12 +257,17 @@ section {
       flex-direction: column;
       align-content: flex-start;
       gap: 1.875rem;
-      max-width: 280px;  }
+      max-width: 280px;  
+      overflow-x:hidden;
+
+    }
    
     section {
       display: flex;
       max-width: 280px;
       margin: 0px 60px;
+      overflow-x:hidden;
+
     }
     .section-right {
         margin-top: -100px;
@@ -278,7 +285,6 @@ section {
     .title-pinned {
         display: none;
     }
-    ::-webkit-scrollbar { overflow-x:hidden; }
 
 
 }
