@@ -185,7 +185,7 @@ section {
   margin-top: 5px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 1455px) {
+@media screen and (min-width: 0) and (max-width: 1455px) {
     header {
         background: none;
     }
@@ -193,8 +193,8 @@ section {
         border: 0 ;
         grid-template-columns: repeat(2, auto);
         grid-template-areas:
-          "aside aside"
-          "main main";
+          "aside main"
+          "aside main";
         max-width: 1000px;
         margin: 2.5rem auto;
         gap: 1rem;
@@ -204,7 +204,7 @@ section {
         grid-template-columns: repeat(2, 1fr);
         display: grid;
         flex-direction: column;
-        max-width: 50rem;
+        max-width: 40rem;
         margin: 0px 60px;
         align-content: flex-start;
         gap: 1.875rem;
@@ -218,20 +218,14 @@ section {
         min-width: 80%;
         display: flex;
         justify-content: flex-start;
-        border: 0px solid gray;
+        border: 1px solid gray;
         border-radius: 5px;
         padding: 3rem;
     }
     .card-readme-int {
         width: 100%;
     }
-    .card-p-pinned 
-    {
-       display: none;
-   }
-   .title-pinned {
-       display: none;
-   }
+ 
 }
 @media screen and (min-width: 20px) and (max-width: 580px) {
     .logo {
@@ -240,18 +234,18 @@ section {
     header img {
       width: 50px;
     }
-    body {
+    main {
       grid-template-columns: minmax(300px, 540px);
       grid-template-areas:
-        "header"
+        "aside"
         "main";
       margin: 40px auto;
-      overflow-x:hidden;
+      overflow:hidden;
 
     }
   
     aside {
-      grid-template-columns: minmax(300, 540px);
+      grid-template-columns: minmax(300px, 540px);
       grid-area: header;
       display: grid;
       flex-direction: column;
@@ -271,7 +265,7 @@ section {
     }
     .section-right {
         margin-top: -100px;
-        min-width: 100%;
+        min-width: 80%;
         display: flex;
         justify-content: flex-start;
         border: 0px solid gray;
