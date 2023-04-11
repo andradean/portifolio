@@ -186,9 +186,7 @@ section {
 }
 
 @media screen and (min-width: 0) and (max-width: 1455px) {
-    header {
-        background: none;
-    }
+    
     main {
         border: 0 ;
         grid-template-columns: repeat(2, auto);
@@ -227,7 +225,48 @@ section {
     }
  
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    header {
+        background: none;
+    }
+    header img {
+        display: none;
+    }
+    .logo {
+        width: 150px;
+    }
+    main {
+        border: 0 ;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas:
+          "aside aside"
+          "main main";
+        max-width: 1000px;
+        margin: 2.5rem auto;
+        gap: 1rem;
+      }
+      .section-right {
+        margin-top: -100px;
+        min-width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        border: 0px solid gray;
+        border-radius: 5px;
+        padding: 3rem;
+    }
+      .card-p-pinned 
+     {
+        display: none;
+    }
+    .title-pinned {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 20px) and (max-width: 580px) {
+    header {
+        background: none;
+    }
     .logo {
         width: 150px;
     }
