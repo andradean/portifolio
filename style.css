@@ -237,6 +237,9 @@ section {
     .logo {
         width: 150px;
     }
+    header img {
+      width: 50px;
+    }
     body {
       grid-template-columns: minmax(300px, 540px);
       grid-template-areas:
